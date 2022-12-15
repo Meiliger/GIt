@@ -14,10 +14,11 @@
 12. `$ cat fileA.txt` - inspect file content
 13. `$ echo "featureB" > fileA.txt` - add a new entry to the "fileA.txt" file (on the first line)
 14. `$ echo "featureC" >> fileA.txt` - add a new entry to the "fileA.txt" file (on the second line)
-15. `$ vim fileA.txt` [ESC] :wq - edit the contents of the file “fileA.tx” with vim
-16. `$ cd ..`
-17. `$ mv gitfolder1/{fileB.txt,fileC.txt} qa1` - move 2 files to another folder
-18. `$ cp gitfolder1/{fileD.json,fileE.json} qa2` - copy 2 files to another folder
+15. `$ git blame fileA.txt | grep featureC`- who made the change related to adding the "featureC" line
+16. `$ vim fileA.txt` [ESC] :wq - edit the contents of the file “fileA.tx” with vim
+17. `$ cd ..`
+18. `$ mv gitfolder1/{fileB.txt,fileC.txt} qa1` - move 2 files to another folder
+19. `$ cp gitfolder1/{fileD.json,fileE.json} qa2` - copy 2 files to another folder
 20. `$ find -name fileA.txt` - search for a file by name (output - "./gitfolder1/fileA.txt")
 21. `$ cd gitfolder1`
 22. `$ head -n 2 fileA.txt`- output the first 2 lines from a text file
@@ -27,10 +28,29 @@
 26. `$ cd ..`
 27. `$ git status`
 28. `$ git add qa2` - add a file to the staging area
-29. 
 30. `$ git log` - used to view the commit history
-31. ``
-32. ``
-33. ``
-34. Создать файл “new.json” `$ touch new.json`
-35. 
+31. `$ git commit -m "add qa2"` - new commit
+33. `$ git remote add origin *link*` - created a link to the remote repository origin using the URL of this repository.
+34. `$ git push -f origin master` - push changes from local repository to remote
+35. `$ git branch featureX`- create the branch
+36. `$ git branch`- view the list of branches in the local repository
+37. `$ git branch -m featureX featureY` - branch renaming
+38. `$ git checkout featureY` - switch to branch
+39. `$ git checkout -` - switch to master
+40. `$ git branch -d featureY` - delete the branch
+41. `$ git checkout -b featureN` - create and switch to branch
+42. `$ echo "simpletext" > fileR.txt`
+43. `$ git add .`
+44. `$ git commit -m "add fileR.txt"`
+45. `$ git checkout -`
+46. `$ git merge featureN` - merge commit
+47. `$ git branch -d featureN` - delete the branch
+48. `$ git commit --amend` - update previous commit
+49. `$ git revert *hash*` - reverting the commit
+50. ``
+51. ``
+52. ``
+53. ``
+54. ``
+55. Создать файл “new.json” `$ touch new.json`
+56. 
