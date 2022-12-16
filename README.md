@@ -24,7 +24,7 @@
 22. `$ head -n 2 fileA.txt`- output the first 2 lines from a text file
 23. `$ tail -n 2 fileA.txt`- output the last 2 lines from a text file
 24. `$ nano fileA.txt` - edit the contents of the file “fileA.tx” with nano
-25. `$ grep 'featureB' fileA.txt`- view content in real time
+25. `$ grep 'featureB' fileA.txt`- grep is a command that will help us find text in the file we have specified
 26. `$ cd ..`
 27. `$ git status`
 28. `$ git add qa2` - add a file to the staging area
@@ -32,25 +32,20 @@
 31. `$ git commit -m "add qa2"` - new commit
 33. `$ git remote add origin *link*` - created a link to the remote repository origin using the URL of this repository.
 34. `$ git push -f origin master` - push changes from local repository to remote
-35. `$ git branch featureX`- create the branch
-36. `$ git branch`- view the list of branches in the local repository
-37. `$ git branch -m featureX featureY` - branch renaming
-38. `$ git checkout featureY` - switch to branch
-39. `$ git checkout -` - switch to master
-40. `$ git branch -d featureY` - delete the branch
-41. `$ git checkout -b featureN` - create and switch to branch
-42. `$ echo "simpletext" > fileR.txt`
-43. `$ git add .`
-44. `$ git commit -m "add fileR.txt"`
-45. `$ git checkout -`
-46. `$ git merge featureN` - merge commit
-47. `$ git branch -d featureN` - delete the branch
-48. `$ git commit --amend` - update previous commit
-49. `$ git revert *hash*` - reverting the commit
-50. ``
-51. ``
-52. ``
-53. ``
-54. ``
-55. Создать файл “new.json” `$ touch new.json`
-56. 
+35. `$ git branch featureX` - create the branch
+36. `$ git branch` - view the list of branches in the local repository
+37. `$ git branch -r` - list remote branches
+38. `$ git branch -m featureX featureY` - branch renaming
+39. `$ git checkout featureY` - switch to branch
+40. `$ git checkout -` - switch to master
+41. `$ git branch -d featureY` - delete the branch
+42. `$ git checkout -b featureN` - create and switch to branch
+43. `$ echo "simpletext" > fileR.txt`
+44. `$ git add .`
+45. `$ git commit -m "add fileR.txt"`
+46. `$ git checkout -`
+47. `$ git merge featureN` - merge commit
+48. `$ git branch -d featureN` - delete the branch
+49. `$ git commit --amend` - update previous commit
+50. `$ git revert *hash*` - reverting the commit
+51. `rm -rf .git` - delete git repository from local repo (from machine)
